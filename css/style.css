@@ -1,0 +1,139 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.banner-right-image img{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 80px 0px;
+}
+.banner-left-design div:first-child{
+    position: absolute;
+    top: 30%;
+}
+
+.head-tittle h1{
+    font-size: 72px;
+    margin-bottom: 0px;
+}
+.head-tittle h1::after{
+    content: '!';
+    font-size: 150px;
+    position: relative;
+    top: 40px;
+    display: inline-block;
+    line-height: 0;
+}
+.head-tittle p
+{
+    font-size: 42px;
+    line-height: 15px;
+}
+
+.license p{
+    font-size: 28px;
+}
+
+strong{
+    font-weight: 900;
+}
+.tagline p{
+    font-size: 22px;
+    line-height: normal;
+}
+.bg-green{
+    background-color: #6eeab8;
+}
+#courses,#latest-blog,#testimonial{
+    padding:60px 0px;
+}
+.heading{
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.heading span{
+    position: absolute;
+    right: -8px;
+    color: #6eeab8;
+    z-index: -1;
+}
+.navbar-brand img{
+    height:40px;
+}
+.courses-card .d-flex{
+    border: 1px solid gainsboro;
+    border-style: dashed;
+
+}
+.courses-card img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #4687FE;
+    border-radius: 100%;
+    padding: 10px;
+}
+.courses-card-image{
+    width: 100px; 
+    height: 100px;
+    border-radius: 100%;
+    
+}
+.courses-card h5{
+    font-weight: bold;
+    margin:5px 0px;
+    text-align: center;
+}
+.courses-card p{
+    font-weight: bold;
+    margin:5px 0px;
+    text-align: center;
+    font-size: 14px;
+}
+.btn-green{
+    background: #2CDD9B;
+    color: white !important;
+    font-weight: bold;
+}
+#latest-blog .nav .nav-item:first-child .nav-link{
+    background: #2CDD9B;
+    color: white !important;
+    font-weight: bold;
+
+}
+#latest-blog .nav .nav-item .nav-link{
+    color:black !important;    
+    font-weight: bold;
+}
+#latest-blog .nav .nav-item .active{
+    color:white !important;
+}
+#latest-blog .nav .nav-item:first-child .nav-link:hover{
+    border-color:transparent;
+}
+#latest-blog .nav-tabs{
+    border-bottom-color: #2CDD9B;
+    border-bottom-width: 3px;
+}
+#latest-blog .nav .nav-item .active{
+    background: #2CDD9B;
+    border-color: transparent;
+}
+#latest-blog .post-meta{
+    color: gainsboro;
+    font-weight: bold;
+}
+.small-post h5{
+    font-size: 1.15rem;
+}
+.small-post .post-img img{
+    height:160px !important;
+    object-fit: cover;
+    border-radius:5px;
+}
