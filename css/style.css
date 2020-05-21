@@ -137,3 +137,9 @@ strong{
     object-fit: cover;
     border-radius:5px;
 }
+#testimonial .banner{
+    background-image: url('../images/testimonail.svg');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
