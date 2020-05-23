@@ -1,6 +1,15 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+a{
+    color:black;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 .banner-right-image img{
     width: 80%;
     position: relative;
@@ -43,10 +52,19 @@ strong{
     line-height: normal;
 }
 .bg-green{
-    background-color: #6eeab8;
+    background-color: #2CDD9B;
 }
-#courses,#latest-blog,#testimonial{
+#courses,#latest-blog,#testimonial,#results,#quote{
     padding:60px 0px;
+}
+#blog{
+    padding:150px 0px;
+}
+#blog .card .bottom {
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+#blog .card .bottom .time, #blog .card .bottom .comments{
+    font-size: 12px;
 }
 .heading{
     text-transform: uppercase;
@@ -101,6 +119,9 @@ strong{
     color: white !important;
     font-weight: bold;
 }
+.color-green{
+    color: #2CDD9B;
+}
 #latest-blog .nav .nav-item:first-child .nav-link{
     background: #2CDD9B;
     color: white !important;
@@ -138,11 +159,174 @@ strong{
     border-radius:5px;
 }
 #testimonial .banner{
-    background-image: url('../images/testimonail.svg');
+    background-image: url('../images/test.svg');
     background-size: cover;
     width: 100%;
     height: 500px;
+    background-position-x: center;
+    background-position-y: center;
 }
-.lassn{
+#testimonial .rounded{
+    border-radius: 100% !important;
+}
+
+.star-yellow{
+    color: #F7B003;
+}
+.owl-prev {
+    width: 15px;
+    /* height: 100px; */
+    position: absolute;
+    top: 40%;
+    margin-left: -40px;
+    display: block !important;
+    border:0px solid black;
+    transition: margin-left ease-out 200ms;
+}
+
+.owl-next {
+    width: 15px;
+    /* height: 100px; */
+    position: absolute;
+    top: 40%;
+    right: -25px;
+    display: block !important;
+    border:0px solid black;
+    transition: right ease-out 200ms;
+}
+.owl-prev:hover{
+    margin-left: -45px;
+}
+.owl-next:hover{
+    right: -30px;
+}
+.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
+.left-testimonial-arrow::after{
+    content: url('../images/left-arrow.svg');
+}
+.right-testimonial-arrow::after{
+    content: url('../images/right-arrow.svg');
+}
+.left-blog-arrow::after{
+    content: url('../images/blog-left-arrow.svg');
+    position: absolute;
+    left: 15px;
+}
+.right-blog-arrow::after{
+    content: url('../images/blog-right-arrow.svg');
+    position: absolute;
+    right: 0px;
+}
+.owl-results .owl-item .item{
+    padding:35px;
+}
+.owl-results .owl-item img{
+    transition: 0.45s;
+}
+.owl-results .owl-item.active.center img {
+
+    transform: scale(1.1, 1.2);
+}
+.owl-results .owl-nav{
+    display: inline !important;
+}
+
+#quote h5{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#quote .item{
+    position: relative;
+
+}
+#quote .item::before{
+    content: '';
+    background: url('../images/quote-left.svg');
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    left: -100px;
+}
+#quote .item::after{
+    content: '';
+    background: url('../images/quote-right.svg');
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 100px;
+    height: 100px;
+}
+
+#quote .item{
+    display: none;
+}
+#quote .item.active{
+    display: block;
+}
+footer{
+    padding-top:120px;
+    position: relative;
+}
+
+fa-facebook-f{
+    color: #444444;
+}
+.facebook{
+    cursor: pointer;
+    display: inline-block;
+    background: url(../images/facebook.png);
+    background-size: contain;
+    width:50px;
+    height:50px;
+    transition: background-position-y ease-out 200ms;
+}
+.facebook:hover,.instagram:hover,.whatsapp:hover{
+    background-position-y: -1px;
+}
+.instagram{
+    cursor: pointer;
+
+    display: inline-block;
+    background: url(../images/Instagram.png);
+    background-size: contain;
+    width:50px;
+    height:50px;
+    transition: background-position-y ease-out 200ms;
+}
+.whatsapp{
+    cursor: pointer;
+    display: inline-block;
+    background: url(../images/Whatsapp.png);
+    background-size: contain;
+    width:50px;
+    height:50px;
+    transition: background-position-y ease-out 200ms;
+}
+footer dl dt{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+footer dl > dd{
+    color: grey;
+}
+.credits p{
+    font-size: 15px;
+    color: grey;
     
+}
+.footer-nav .navbar-brand img{
+    height: 50px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: #2CDD9B;
+}
+.post-description{
+    font-family: 'Open Sans', sans-serif;
 }
