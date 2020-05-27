@@ -34,7 +34,8 @@ $(document).ready(function(){
     })
     $('.speaking-tasks').owlCarousel({
         loop:true,
-        margin:30,
+        margin:50,
+        padding:50,
         nav:true,
         items:3,
 
