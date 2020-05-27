@@ -23,7 +23,12 @@ $(document).ready(function(){
         items:3,
         center:true,
         autoHeight:true,
-        navText : ['<i class="left-testimonial-arrow" aria-hidden="true"></i>','<i class="right-testimonial-arrow" aria-hidden="true"></i>']
+        navText : ['<i class="left-testimonial-arrow" aria-hidden="true"></i>','<i class="right-testimonial-arrow" aria-hidden="true"></i>'],
+        responsive:{
+            767:{
+                items:1
+            }
+        }
     })
     $('.owl-quotes').owlCarousel({
         loop:true,
