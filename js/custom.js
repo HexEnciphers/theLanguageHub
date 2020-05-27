@@ -23,7 +23,12 @@ $(document).ready(function(){
         items:3,
         center:true,
         autoHeight:true,
-        navText : ['<i class="left-testimonial-arrow" aria-hidden="true"></i>','<i class="right-testimonial-arrow" aria-hidden="true"></i>']
+        navText : ['<i class="left-testimonial-arrow" aria-hidden="true"></i>','<i class="right-testimonial-arrow" aria-hidden="true"></i>'],
+        responsive:{
+            767:{
+                items:1
+            }
+        }
     })
     $('.owl-quotes').owlCarousel({
         loop:true,
@@ -34,7 +39,8 @@ $(document).ready(function(){
     })
     $('.speaking-tasks').owlCarousel({
         loop:true,
-        margin:30,
+        margin:50,
+        padding:50,
         nav:true,
         items:3,
 
