@@ -69,3 +69,41 @@ $(document).ready(function(){
             }
         }, 5000);
 });
+/**Offcanvas Menu */
+$("[data-trigger]").on("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    var offcanvas_id =  $(this).attr('data-trigger');
+    $(offcanvas_id).toggleClass("show");
+    $('body').toggleClass("offcanvas-active");
+    $(".screen-overlay").toggleClass("show");
+}); 
+
+    $(document).ready(function(){
+        var element = $('#ges');
+        $(element).hammer().bind("swipeleft", function(e){
+            // alert("das");
+            e.preventDefault();
+            e.stopPropagation();
+            var offcanvas_id =  $("[data-trigger]").attr('data-trigger');
+            $(offcanvas_id).toggleClass("show");
+            $('body').toggleClass("offcanvas-active");
+            $(".screen-overlay").toggleClass("show");
+
+        });
+        $("#navbar_main").hammer().bind("swiperight", function(e){
+            // alert("das");
+            $(".screen-overlay").removeClass("show");
+            $(".mobile-offcanvas").removeClass("show");
+            $("body").removeClass("offcanvas-active");
+        });
+
+    })
+
+
+
+$(".btn-close, .screen-overlay").click(function(e){
+    $(".screen-overlay").removeClass("show");
+    $(".mobile-offcanvas").removeClass("show");
+    $("body").removeClass("offcanvas-active");
+}); 
