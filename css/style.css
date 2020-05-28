@@ -58,7 +58,7 @@ strong{
     padding:60px 0px;
 }
 #blog,#contact-us,#about{
-    padding:150px 0px;
+    padding-top :150px ;
 }
 #blog .card .bottom {
     border-top: 1px solid rgba(0,0,0,.125);
@@ -601,8 +601,6 @@ background-position-x: right;
     font-size: 35px;
     }
 
-
-
 .head-tittle p {
     font-size: 20px;
     line-height: 25px;
@@ -732,7 +730,7 @@ font-weight: bold;
     font-size: 18px;
 }
 #blog .post-img img{
-    height:180px;
+    height:200px;
 }
 .banner-right-image img {
     width: 70%;
@@ -740,5 +738,13 @@ font-weight: bold;
 .second-banner{
     min-height: 350px; 
 }
-
+#blog .post-info h5{
+    font-size:16px;
+}
+#blog .post-info .meta,#blog .post-info p{
+    font-size:14px;
+}
+#recent-posts .post-img img{
+    height:auto;
+}
 }

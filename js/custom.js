@@ -37,16 +37,7 @@ $(document).ready(function(){
         autoHeight:true,
 
     })
-    $('.speaking-tasks').owlCarousel({
-        loop:true,
-        margin:50,
-        padding:50,
-        nav:true,
-        items:3,
-
-        navText : ['<i class="left-blog-arrow" aria-hidden="true"></i>','<i class="right-blog-arrow" aria-hidden="true"></i>']
-
-    })
+   
 
         var length = $("#quote").find('.item').length;
         var items = $("#quote").find('.item');
